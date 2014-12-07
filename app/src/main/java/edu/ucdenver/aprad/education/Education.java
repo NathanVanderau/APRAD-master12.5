@@ -37,15 +37,15 @@ public class Education extends Activity {
         setContentView(R.layout.education);
         getSharedPreferences(SHARED_PREFERENCES, Context.MODE_PRIVATE);
 
-/*        Button synthesizeWaveDataButton = (Button) findViewById(R.id.synthesizeWaveDataButton);
+        Button synthesizeWaveDataButton = (Button) findViewById(R.id.synthesizeWaveDataButton);
         synthesizeWaveDataButton.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick( View v ){
-                Intent intent = new Intent( v.getContext(), SimulateWaveData.class);
+                Intent intent = new Intent( v.getContext(), SynthesisWaveData.class);
                 v.getContext().startActivity(intent);
             }
         });
-*/
+
 /*        Button useSavedDataButton = (Button) findViewById(R.id.useSavedDataButton);
         useSavedDataButton.setOnClickListener( new OnClickListener() {
             @Override
