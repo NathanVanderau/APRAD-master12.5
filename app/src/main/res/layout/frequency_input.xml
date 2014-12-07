@@ -4,225 +4,243 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#000000">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <!-- This ^^ was giving me many issues with not allowing me to have
+        the following RelativeLayout completely fill the parent. It would
+        only go about 3/4 of the way down the screen.
+        I had to add teh android:fillViewport=true to ScrollView to allow
+        the RelativeView to fill the screen. It's all good in the hood now.
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/firstFreqVariable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/frequency_1"/>
+                <EditText
+                    android:id="@+id/freq_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/firstTimeVariable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/firstFreqVariable">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/time_1"/>
+                <EditText
+                    android:id="@+id/t_1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+               <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/firstSpace"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/firstTimeVariable">
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/secondFreqVariable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/firstSpace">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/frequency_2"/>
+                <EditText
+                    android:id="@+id/freq_2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondTimeVariable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/secondFreqVariable">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/time_2"/>
+                <EditText
+                    android:id="@+id/t_2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondSpace"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/secondTimeVariable">
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/thirdFreqVariable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/secondSpace">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/frequency_3"/>
+                <EditText
+                    android:id="@+id/freq_3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdTimeVariable"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/thirdFreqVariable">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/time_3"/>
+                <EditText
+                    android:id="@+id/t_3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="#ff9c9b9f"
+                    android:text="@string/hertz"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdSpace"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/thirdTimeVariable">
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
 
     <LinearLayout
-        android:id="@+id/firstFreqVariable"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true">
-
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/frequency_1"/>
-        <EditText
-            android:id="@+id/freq_1"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/hertz"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/firstTimeVariable"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/firstFreqVariable">
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/time_1"/>
-        <EditText
-            android:id="@+id/t_1"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/hertz"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/firstSpace"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="20dp"
-        android:layout_below="@+id/firstTimeVariable">
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:id="@+id/secondFreqVariable"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/firstSpace">
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/frequency_2"/>
-        <EditText
-            android:id="@+id/freq_2"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/hertz"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/secondTimeVariable"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/secondFreqVariable">
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/time_2"/>
-        <EditText
-            android:id="@+id/t_2"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/hertz"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/secondSpace"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="20dp"
-        android:layout_below="@+id/secondTimeVariable">
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:id="@+id/thirdFreqVariable"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/secondSpace">
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/frequency_3"/>
-        <EditText
-            android:id="@+id/freq_3"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/hertz"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/thirdTimeVariable"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/thirdFreqVariable">
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/time_3"/>
-        <EditText
-            android:id="@+id/t_3"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:background="#ffffff"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textColor="#ff9c9b9f"
-            android:text="@string/hertz"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/thirdSpace"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="20dp"
-        android:layout_below="@+id/thirdTimeVariable">
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true">
-
         <Button
             android:id="@+id/goButton"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Go!"
             android:background="@drawable/grey_button"

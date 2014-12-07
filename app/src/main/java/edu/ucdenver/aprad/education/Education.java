@@ -1,7 +1,6 @@
 package edu.ucdenver.aprad.education;
 
 import edu.ucdenver.aprad.R;
-import edu.ucdenver.aprad.education.RawSignal;
 import edu.ucdenver.aprad.info.About;
 import edu.ucdenver.aprad.info.Help;
 import android.app.Activity;
@@ -41,7 +40,7 @@ public class Education extends Activity {
         synthesizeWaveDataButton.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick( View v ){
-                Intent intent = new Intent( v.getContext(), SynthesisWaveData.class);
+                Intent intent = new Intent( v.getContext(), SynthesizeWaveData.class);
                 v.getContext().startActivity(intent);
             }
         });

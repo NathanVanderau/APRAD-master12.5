@@ -20,7 +20,7 @@ import edu.ucdenver.aprad.R;
  **
  **********************************************/
 
-public class SynthesisWaveData extends Activity
+public class SynthesizeWaveData extends Activity
 {
     public static final String SHARED_PREFERENCES = "SharedPreferences";
     SharedPreferences sharedPreferences;
@@ -29,7 +29,7 @@ public class SynthesisWaveData extends Activity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.education);
+        setContentView(R.layout.frequency_input);
         getSharedPreferences(SHARED_PREFERENCES, Context.MODE_PRIVATE);
 
         Button goButton = (Button) findViewById(R.id.goButton);
