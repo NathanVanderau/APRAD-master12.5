@@ -1,0 +1,141 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .metadata/
+* .metadata/.lock
+* .metadata/.log
+* .metadata/.mylyn/
+* .metadata/.mylyn/.taskListIndex/
+* .metadata/.mylyn/.taskListIndex/segments.gen
+* .metadata/.mylyn/.taskListIndex/segments_1
+* .metadata/.mylyn/repositories.xml.zip
+* .metadata/.mylyn/tasks.xml.zip
+* .metadata/version.ini
+* APRAD GFX/
+* APRAD GFX/APRAD Settings.png
+* APRAD GFX/Thumbs.db
+* APRADFinal.mp4
+* Thumbs.db
+* aprad.docx
+* doc/
+* doc/.DS_Store
+* doc/allclasses-frame.html
+* doc/allclasses-noframe.html
+* doc/com/
+* doc/com/ucdenver/
+* doc/com/ucdenver/aprad_v2/
+* doc/com/ucdenver/aprad_v2/AudioRecordListener.html
+* doc/com/ucdenver/aprad_v2/AudioRecorder.html
+* doc/com/ucdenver/aprad_v2/BuildConfig.html
+* doc/com/ucdenver/aprad_v2/Complex.html
+* doc/com/ucdenver/aprad_v2/FFT.html
+* doc/com/ucdenver/aprad_v2/R.attr.html
+* doc/com/ucdenver/aprad_v2/R.dimen.html
+* doc/com/ucdenver/aprad_v2/R.drawable.html
+* doc/com/ucdenver/aprad_v2/R.html
+* doc/com/ucdenver/aprad_v2/R.id.html
+* doc/com/ucdenver/aprad_v2/R.layout.html
+* doc/com/ucdenver/aprad_v2/R.menu.html
+* doc/com/ucdenver/aprad_v2/R.string.html
+* doc/com/ucdenver/aprad_v2/R.style.html
+* doc/com/ucdenver/aprad_v2/SpecAnalyView.html
+* doc/com/ucdenver/aprad_v2/SpectrumAnalyzer.html
+* doc/com/ucdenver/aprad_v2/class-use/
+* doc/com/ucdenver/aprad_v2/class-use/AudioRecordListener.html
+* doc/com/ucdenver/aprad_v2/class-use/AudioRecorder.html
+* doc/com/ucdenver/aprad_v2/class-use/BuildConfig.html
+* doc/com/ucdenver/aprad_v2/class-use/Complex.html
+* doc/com/ucdenver/aprad_v2/class-use/FFT.html
+* doc/com/ucdenver/aprad_v2/class-use/R.attr.html
+* doc/com/ucdenver/aprad_v2/class-use/R.dimen.html
+* doc/com/ucdenver/aprad_v2/class-use/R.drawable.html
+* doc/com/ucdenver/aprad_v2/class-use/R.html
+* doc/com/ucdenver/aprad_v2/class-use/R.id.html
+* doc/com/ucdenver/aprad_v2/class-use/R.layout.html
+* doc/com/ucdenver/aprad_v2/class-use/R.menu.html
+* doc/com/ucdenver/aprad_v2/class-use/R.string.html
+* doc/com/ucdenver/aprad_v2/class-use/R.style.html
+* doc/com/ucdenver/aprad_v2/class-use/SpecAnalyView.html
+* doc/com/ucdenver/aprad_v2/class-use/SpectrumAnalyzer.html
+* doc/com/ucdenver/aprad_v2/package-frame.html
+* doc/com/ucdenver/aprad_v2/package-summary.html
+* doc/com/ucdenver/aprad_v2/package-tree.html
+* doc/com/ucdenver/aprad_v2/package-use.html
+* doc/constant-values.html
+* doc/deprecated-list.html
+* doc/help-doc.html
+* doc/index-files/
+* doc/index-files/index-1.html
+* doc/index-files/index-10.html
+* doc/index-files/index-11.html
+* doc/index-files/index-12.html
+* doc/index-files/index-13.html
+* doc/index-files/index-14.html
+* doc/index-files/index-15.html
+* doc/index-files/index-16.html
+* doc/index-files/index-17.html
+* doc/index-files/index-2.html
+* doc/index-files/index-3.html
+* doc/index-files/index-4.html
+* doc/index-files/index-5.html
+* doc/index-files/index-6.html
+* doc/index-files/index-7.html
+* doc/index-files/index-8.html
+* doc/index-files/index-9.html
+* doc/index.html
+* doc/overview-tree.html
+* doc/package-list
+* doc/resources/
+* doc/resources/inherit.gif
+* doc/stylesheet.css
+* hs_err_pid1372.log
+* hs_err_pid2080.log
+* hs_err_pid4192.log
+* hs_err_pid5152.log
+* model.ucls
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* bin/res/ => app/src/androidTest/res/
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

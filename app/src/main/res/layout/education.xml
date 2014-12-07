@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+        @author:         Nathan Vanderau
+        @created:        21 Nov 2014
+        @Modified By:
+        @Modified Date:
+    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#000000"
+              android:orientation="vertical" >
+
+
+<Button
+    android:id="@+id/synthesizeWaveDataButton"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="@string/synthesize_data"
+    android:background="@drawable/grey_button"
+    android:layout_gravity="center_horizontal"
+    style="@style/button_text" />
+
+<Button
+    android:id="@+id/useSavedDataButton"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="@string/use_saved"
+    android:background="@drawable/grey_button"
+    style="@style/button_text" />
+    <Button
+        android:id="@+id/viewRawSignalButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/raw_signal"
+        android:background="@drawable/grey_button"
+        style="@style/button_text" />
+<Button
+    android:id="@+id/helpButton"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="@string/help"
+    android:background="@drawable/grey_button"
+    style="@style/button_text" />
+
+<Button
+    android:id="@+id/aboutButton"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="@string/about"
+    android:background="@drawable/grey_button"
+    style="@style/button_text" />
+
+</LinearLayout>

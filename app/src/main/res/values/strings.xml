@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APRAD</string>
+
+
+    <string name="spectrogram">Spectrogram</string>
+    <string name="spectrum_analyzer">Spectrum Analyzer</string>
+    <string name="education">Education</string>
+    <string name="help">Help</string>
+    <string name="help_content">APRAD (Autonomous Portable low frequency Receiver And Display)
+        provides a means of measuring and analyzing electromagnetic waves in the environment.
+        \nIt provides two main functionalities:
+        \n\nThe Spectrum Analyzer provides real-time representations of input signals.
+        The Spectrum Analyzer displays the frequencies on the horizontal (x) axis and the amplitude of those frequencies
+        on the vertical (y) axis. The signal is generated with Fourier analysis of the input electrical signal. With the
+        APRAD antenna attached, the Analyzer will display the electromagnetic signal of the surrounding electromagnetic
+        radiation within the limits of the device. The Analyzer can also be take advantage of the microphone input of
+        the mobile device.
+        \n\nThe Spectrogram displays the frequency and amplitude data as a function of time, with the amplitude represented by color.
+        The frequency data is shown on the vertical (y) axis while the horizontal (x) axis represents time in seconds.
+        The amplitude graph on the right edge of the Spectrogram screen indicates frequencies with small amplitude with a
+        dark blue color. The color changes as amplitude increases to display lighter blue, green, yellow and red for the
+        most intense frequency signals.\n
+        The Start/Stop Recording button in the upper left corner of the Spectrogram screen begins the signal capture
+        process. When the Spectrogram is first selected from the menu, it begins recording data immediately. In order
+        to stop recording, simply press the Stop Recording button at the top left corner of the screen. A prompt to save
+        the recorded data will appear. Select either to Save the data or to Cancel the save. Once the recording of Spectrogram
+        data is stopped, the actual amount of time recorded (in seconds) will be shown in the upper right corner of the screen.
+        The Spectrogram allows the user to save the captured data (up to a maximum of 60 seconds). Multiple recordings may be
+        taken by pressing the Start Recording button in the upper left corner of the screen.
+        \n\nThe Education section provides many educational features.
+        \nIt can simulate waves, open previously captured and saved spectrogram wave data, and allows the user to view raw captured data.
+        \nThe Synthesize Wave Data section prompts the user to enter up to three frequency and time pairs, and once the user
+        hits the &lt;Go&gt; button, the wave(s) will be graphed as they would theorectically interact with each other.
+        \nThe Use Saved Wave Data section allows the user to pull up previously captured and saved wave data, and will display the
+        saved data in a spectrogram.
+        \nThe View Raw Signal section allows the user to see the ambient waves data in the time domain. This is a different view
+        than either the Spectrum Analyzer or the Spectrogram.
+        \n
+        </string>
+    <string name="about">About</string>
+    <string name="about_content">
+        Copyright 2014
+        \nUniversity of Colorado, Denver
+        \nDepartment of Computer Science
+        \nDepartment of Electrical Engineering
+        \n\nAuthors:
+        \nAdam Perez
+        \nElnora Fuentes
+        \nKun Li
+        \nMichael Dewar
+        \nNathan Vanderau
+        \nNicolas Gross
+        \nRobert Perlstein
+        \n
+        \n</string>
+
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="preferences">Preferences</string>
+    <string name="synthesize_data">Synethesize Wave Data</string>
+    <string name="use_saved">Use Saved Wave Data</string>
+    <string name="raw_signal">View Raw Signal</string>
+    <string name="save_dialog">Save data?</string>
+    <string name="save">Save</string>
+    <string name="go">Go!</string>
+
+
+    <string name="settings">Settings</string>
+    <string name="open_saved_data">Open Saved Data</string>
+
+
+    <string-array name="frequency_options">
+        <item>8000 Hz</item>
+        <item>11025 Hz</item>
+        <item>12000 Hz</item>
+        <item>16000 Hz</item>
+        <item>22050 Hz</item>
+        <item>24000 Hz</item>
+        <item>32000 Hz</item>
+        <item>44100 Hz</item>
+        <item>48000 Hz</item>
+    </string-array>
+
+
+    <string name="frequency">Sampling Frequency</string>
+
+
+    <string name="frequency_1">ƒ<sub>1</sub> = </string>
+    <string name="time_1">t<sub>1</sub> = </string>
+    <string name="frequency_2">ƒ<sub>2</sub> = </string>
+    <string name="time_2">t<sub>2</sub> = </string>
+    <string name="frequency_3">ƒ<sub>3</sub> = </string>
+    <string name="time_3">t<sub>3</sub> = </string>
+    <string name="hertz">  Hz</string>
+    <string name="sec">[s]</string>
+
+
+    <string-array name="interval_options">
+        <item>Live Data Rendering</item>
+        <item>Record Then Render Data</item>
+    </string-array>
+    <string name="interval">Recording and Display</string>
+
+
+    <string name="viewType">Data Display Scaling Type</string>
+    <string-array name="display_scaling_options">
+        <item>Logarithmic Scaling</item>
+        <item>Linear Scaling</item>
+    </string-array>
+</resources>
