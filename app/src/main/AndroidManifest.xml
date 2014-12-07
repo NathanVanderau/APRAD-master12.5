@@ -54,6 +54,8 @@
         <!-- This was a bitch to figure out. for some reason, Android Studio didn't automatically add this activity like it did for the rest.-->
         <activity android:name="edu.ucdenver.aprad.education.SynthesizeWaveDataView"></activity>
         <!-- This was a bitch to figure out. for some reason, Android Studio didn't automatically add this activity like it did for the rest.-->
+        <activity android:name="edu.ucdenver.aprad.education.FileChooser"></activity>
+        <!-- This was a bitch to figure out. for some reason, Android Studio didn't automatically add this activity like it did for the rest.-->
 
 
         <activity android:name="edu.ucdenver.aprad.info.Help"></activity>

@@ -45,15 +45,23 @@ public class Education extends Activity {
             }
         });
 
-/*        Button useSavedDataButton = (Button) findViewById(R.id.useSavedDataButton);
+        Button useSavedDataButton = (Button) findViewById(R.id.useSavedDataButton);
         useSavedDataButton.setOnClickListener( new OnClickListener() {
+
+            /*********************************
+             **
+             ** When we implement the actual usage of the
+             ** data in the selected CSV file, we'll need
+             ** to change the intent's class to UseSavedData
+             **
+             *********************************/
             @Override
             public void onClick( View v ){
-                Intent intent = new Intent( v.getContext(), UseSavedData.class);
+                Intent intent = new Intent( v.getContext(), FileChooser.class);
                 v.getContext().startActivity(intent);
             }
         });
-*/
+
         Button viewRawSignalButton = (Button) findViewById(R.id.viewRawSignalButton);
         viewRawSignalButton.setOnClickListener( new OnClickListener()
         {
