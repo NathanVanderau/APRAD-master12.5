@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Stack;
+
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -69,13 +71,27 @@ public class FileChooser extends ListActivity
     }
 
     //Handles when users click on files and folders.
+
+    //Implementing a ".. Parent Directory" option in the file navigation
+    //as when the user clicks on the default Back button, it takes them
+    //back to the education.xml view.
+
+    Stack<File> dirStack = new Stack<File>();
+
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id)
     {
         super.onListItemClick(l, v, position, id);
         Option option = adapter.getItem(position);
-        if(option.getData().equalsIgnoreCase("folder")||option.getData().equalsIgnoreCase("parent directory")){
+        if(option.getData().equalsIgnoreCase("folder")||option.getData().equalsIgnoreCase("Parent Directory"))
+        {
             currentDir = new File(option.getPath());
+            fill(currentDir);
+        }
+        else
+        if(option.getData().equalsIgnoreCase("Parent Directory"))
+        {
+            currentDir = dirStack.pop();
             fill(currentDir);
         }
         else
