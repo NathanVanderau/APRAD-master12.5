@@ -38,7 +38,9 @@
         \nThe View Raw Signal section allows the user to see the ambient waves data in the time domain. This is a different view
         than either the Spectrum Analyzer or the Spectrogram.
         \n
-        </string>
+    </string>
+
+
     <string name="about">About</string>
     <string name="about_content">
         Copyright 2014
@@ -54,14 +56,15 @@
         \nNicolas Gross
         \nRobert Perlstein
         \n
-        \n</string>
+        \n
+    </string>
 
 
     <string name="action_settings">Settings</string>
 
 
     <string name="preferences">Preferences</string>
-    <string name="synthesize_data">Synethesize Wave Data</string>
+    <string name="synthesize_data">Synthesize Wave Data</string>
     <string name="use_saved">Use Saved Wave Data</string>
     <string name="raw_signal">View Raw Signal</string>
     <string name="save_dialog">Save data?</string>
