@@ -63,7 +63,7 @@
     <string name="preferences">Preferences</string>
     <string name="synthesize_data">Synethesize Wave Data</string>
     <string name="use_saved">Use Saved Wave Data</string>
-    <string name="raw_signal">View Raw Signal</string>
+    <string name="time_domain">Time Domain</string>
     <string name="save_dialog">Save data?</string>
     <string name="save">Save</string>
     <string name="go">Go!</string>
@@ -89,12 +89,19 @@
     <string name="frequency">Sampling Frequency</string>
 
 
-    <string name="frequency_1">ƒ<sub>1</sub> = </string>
-    <string name="time_1">t<sub>1</sub> = </string>
-    <string name="frequency_2">ƒ<sub>2</sub> = </string>
-    <string name="time_2">t<sub>2</sub> = </string>
-    <string name="frequency_3">ƒ<sub>3</sub> = </string>
-    <string name="time_3">t<sub>3</sub> = </string>
+    <string name="equation">y<sub>i</sub> = A<sub>cos</sub>cos(2πƒ<sub>cos</sub>t)+A<sub>sin</sub>sin(2πƒ<sub>sin</sub>)</string>
+    <string name="amplitude_cos_1">A<sub>cos<sub>1</sub></sub> = </string>
+    <string name="amplitude_sin_1">A<sub>sin<sub>1</sub></sub> = </string>
+    <string name="frequency_cos_1">ƒ<sub>cos<sub>1</sub></sub> = </string>
+    <string name="frequency_sin_1">ƒ<sub>sin<sin>2</sin></sub> = </string>
+    <string name="amplitude_cos_2">A<sub>cos<sub>2</sub></sub> = </string>
+    <string name="amplitude_sin_2">A<sub>sin<sub>2</sub></sub> = </string>
+    <string name="frequency_cos_2">ƒ<sub>cos<sub>2</sub></sub> = </string>
+    <string name="frequency_sin_2">ƒ<sub>sin<sin>2</sin></sub> = </string>
+    <string name="amplitude_cos_3">A<sub>cos<sub>3</sub></sub> = </string>
+    <string name="amplitude_sin_3">A<sub>sin<sub>3</sub></sub> = </string>
+    <string name="frequency_cos_3">ƒ<sub>cos<sub>3</sub></sub> = </string>
+    <string name="frequency_sin_3">ƒ<sub>sin<sin>3</sin></sub> = </string>
     <string name="hertz">  Hz</string>
     <string name="sec">[s]</string>
 
