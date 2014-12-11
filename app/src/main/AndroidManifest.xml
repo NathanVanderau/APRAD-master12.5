@@ -48,7 +48,7 @@
                   android:configChanges="orientation|keyboardHidden" ></activity>
         
         <activity android:name="edu.ucdenver.aprad.education.Education"></activity>
-        <activity android:name="edu.ucdenver.aprad.education.RawSignal"></activity>
+        <activity android:name="edu.ucdenver.aprad.education.TimeDomain"></activity>
         <!-- This was a bitch to figure out. for some reason, Android Studio didn't automatically add this activity like it did for the rest.-->
         <activity android:name="edu.ucdenver.aprad.education.SynthesizeWaveData"></activity>
         <!-- This was a bitch to figure out. for some reason, Android Studio didn't automatically add this activity like it did for the rest.-->

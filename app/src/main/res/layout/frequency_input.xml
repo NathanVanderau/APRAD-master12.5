@@ -34,8 +34,8 @@
                 android:layout_alignParentLeft="true">
                 <TextView
                     android:layout_width="fill_parent"
-                    android:layout_height="20dp"
-                    android:gravity="center_horizontal"
+                    android:layout_height="40dp"
+                    android:gravity="center"
                     android:textAlignment="center"
                     android:textSize="20dp"
                     android:textColor="#ff9c9b9f"
@@ -450,7 +450,7 @@
                 android:orientation="horizontal"
                 android:gravity="center_horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="220dp"
                 android:layout_below="@+id/freqSin3Variable">
             </LinearLayout>
 
@@ -466,7 +466,7 @@
         android:background="#000000"
         android:layout_alignParentBottom="true">
         <Button
-            android:id="@+id/graphSpectrumAnalyzer"
+            android:id="@+id/graphSpectrumAnalyzerButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -474,7 +474,7 @@
             android:background="@drawable/grey_button"
             style="@style/button_text"/>
         <Button
-            android:id="@+id/graphSpectrogram"
+            android:id="@+id/graphSpectrogramButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -482,7 +482,7 @@
             android:background="@drawable/grey_button"
             style="@style/button_text"/>
         <Button
-            android:id="@+id/graphTimeDomain"
+            android:id="@+id/graphTimeDomainButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"

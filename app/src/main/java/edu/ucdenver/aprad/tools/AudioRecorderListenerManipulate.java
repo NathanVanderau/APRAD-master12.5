@@ -1,7 +1,7 @@
 package edu.ucdenver.aprad.tools;
 
-import edu.ucdenver.aprad.education.RawSignal;
-import edu.ucdenver.aprad.education.RawSignalView;
+import edu.ucdenver.aprad.education.TimeDomain;
+import edu.ucdenver.aprad.education.TimeDomainView;
 import edu.ucdenver.aprad.spectrogram.SpectrogramView;
 import edu.ucdenver.aprad.spectrum_analyzer.SpectrumAnalyzer;
 import edu.ucdenver.aprad.spectrum_analyzer.SpectrumAnalyzerView;
@@ -14,7 +14,7 @@ public class AudioRecorderListenerManipulate implements AudioRecordListener
 	
 	private static SpectrumAnalyzerView spectrumVisualizer;
 	private static Spectrogram spectrogram;
-	private static RawSignalView educationVisualizer;
+	private static TimeDomainView educationVisualizer;
 	private static AudioRecordListener audioListener;
 	
 	private FFT fft = new FFT( NUM_SAMPLES );
@@ -36,7 +36,7 @@ public class AudioRecorderListenerManipulate implements AudioRecordListener
 		spectrogram = spectro;
 	}
 	
-	public static void registerFFTAvailListenerOnEducation( AudioRecorderListenerManipulate manipulater, RawSignalView educationVisual )
+	public static void registerFFTAvailListenerOnEducation( AudioRecorderListenerManipulate manipulater, TimeDomainView educationVisual )
 	{
 		audioListener = manipulater;
 		educationVisualizer = educationVisual;

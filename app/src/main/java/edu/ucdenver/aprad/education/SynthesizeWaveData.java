@@ -32,8 +32,8 @@ public class SynthesizeWaveData extends Activity
         setContentView(R.layout.frequency_input);
         getSharedPreferences(SHARED_PREFERENCES, Context.MODE_PRIVATE);
 
-        Button goButton = (Button) findViewById(R.id.goButton);
-        goButton.setOnClickListener(new View.OnClickListener()
+        Button graphSpectrumAnalyzerButton = (Button) findViewById(R.id.graphSpectrumAnalyzerButton);
+        graphSpectrumAnalyzerButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)

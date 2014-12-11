@@ -6,9 +6,9 @@
               android:configChanges="orientation|keyboardHidden" >
 
 
-    <edu.ucdenver.aprad.education.RawSignalView
+    <edu.ucdenver.aprad.education.TimeDomainView
         android:id="@+id/educationSurfaceView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
-    </edu.ucdenver.aprad.education.RawSignalView>
+    </edu.ucdenver.aprad.education.TimeDomainView>
 </LinearLayout>

@@ -2,7 +2,7 @@ package edu.ucdenver.aprad;
 
 import edu.ucdenver.aprad.R;
 import edu.ucdenver.aprad.education.Education;
-import edu.ucdenver.aprad.education.RawSignal;
+import edu.ucdenver.aprad.education.TimeDomain;
 import edu.ucdenver.aprad.info.About;
 import edu.ucdenver.aprad.info.Help;
 import edu.ucdenver.aprad.spectrogram.Spectrogram;
@@ -24,6 +24,7 @@ public class Aprad extends Activity {
 
   Button spectrumAnalyzerButton;
   Button spectrogramButton;
+  Button timeDomainButton;
   Button educationButton;
   Button helpButton;
   Button aboutButton;
@@ -65,7 +66,20 @@ public class Aprad extends Activity {
     												}
     											}
     									);
-    
+
+    timeDomainButton = (Button) findViewById(R.id.timeDomainButton);
+    timeDomainButton.setOnClickListener(
+          new OnClickListener()
+          {
+              @Override
+              public void onClick( View v )
+              {
+                  Intent intent = new Intent( v.getContext(), Education.class);
+                  v.getContext().startActivity(intent);
+              }
+          }
+      );
+
     educationButton = (Button) findViewById(R.id.educationButton);
     educationButton.setOnClickListener( 
     									new OnClickListener() 

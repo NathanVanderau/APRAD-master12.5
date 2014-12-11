@@ -62,16 +62,21 @@ public class Education extends Activity {
             }
         });
 
-        Button viewRawSignalButton = (Button) findViewById(R.id.viewRawSignalButton);
+        /**************************************************
+         **
+         **  Moved to main.xml/Aprad.java
+         **
+         **************************************************/
+/*      Button viewRawSignalButton = (Button) findViewById(R.id.timeDomainButton);
         viewRawSignalButton.setOnClickListener( new OnClickListener()
         {
             @Override
             public void onClick( View v ){
-                Intent intent = new Intent( v.getContext(), RawSignal.class);
+                Intent intent = new Intent( v.getContext(), TimeDomain.class);
                 v.getContext().startActivity(intent);
             }
         });
-
+*/
         Button helpButton = (Button) findViewById(R.id.helpButton);
         helpButton.setOnClickListener( new OnClickListener() {
             @Override

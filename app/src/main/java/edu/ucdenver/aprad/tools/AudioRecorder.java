@@ -1,8 +1,8 @@
 package edu.ucdenver.aprad.tools;
 
 import edu.ucdenver.aprad.education.Education;
-import edu.ucdenver.aprad.education.RawSignalView;
-import edu.ucdenver.aprad.education.RawSignal;
+import edu.ucdenver.aprad.education.TimeDomain;
+import edu.ucdenver.aprad.education.TimeDomainView;
 import edu.ucdenver.aprad.spectrogram.Spectrogram;
 import edu.ucdenver.aprad.spectrogram.SpectrogramView;
 import edu.ucdenver.aprad.spectrum_analyzer.SpectrumAnalyzerView;
@@ -26,7 +26,7 @@ public class AudioRecorder extends Thread
 	//private AudioRecordListener audioListener;
 	private SpectrumAnalyzerView spectrumVisualizer 	= null;
 	private Spectrogram 	 	 spectrogram 			= null;
-	private RawSignalView 		 educationVisualizer 	= null;
+	private TimeDomainView educationVisualizer 	= null;
 	protected AudioRecorderListenerManipulate manipulater = new AudioRecorderListenerManipulate();
 	
 	private int          minBufferSizer;
@@ -62,7 +62,7 @@ public class AudioRecorder extends Thread
 		start();
 	}
 	
-	public AudioRecorder(double sampleRate, int points, RawSignalView educationVisualizer)
+	public AudioRecorder(double sampleRate, int points, TimeDomainView educationVisualizer)
 	{
 		this.sampleRate = sampleRate;
 		this.numFFTSamples = points;
