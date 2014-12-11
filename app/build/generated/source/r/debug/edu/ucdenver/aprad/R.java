@@ -24,8 +24,8 @@ public final class R {
         public static final int grey_button=0x7f020000;
         public static final int ic_launcher=0x7f020001;
         public static final int icon=0x7f020002;
-        public static final int simulate_wave=0x7f020003;
-        public static final int splash=0x7f020004;
+        public static final int splash=0x7f020003;
+        public static final int splash_synthesize_wave=0x7f020004;
     }
     public static final class id {
         public static final int TextView01=0x7f0a002d;
@@ -77,8 +77,8 @@ public final class R {
         public static final int settings=0x7f0a003c;
         public static final int spectrogramButton=0x7f0a002a;
         public static final int spectrumAnalyzerButton=0x7f0a0029;
+        public static final int splashGraph=0x7f0a0039;
         public static final int splashLogo=0x7f0a0038;
-        public static final int splash_synthesize_wave_data=0x7f0a0039;
         public static final int surfaceView=0x7f0a0037;
         public static final int synthesizeWaveDataButton=0x7f0a0002;
         public static final int textView1=0x7f0a002f;

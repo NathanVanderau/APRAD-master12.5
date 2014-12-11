@@ -74,7 +74,7 @@ public class Aprad extends Activity {
               @Override
               public void onClick( View v )
               {
-                  Intent intent = new Intent( v.getContext(), Education.class);
+                  Intent intent = new Intent( v.getContext(), TimeDomain.class);
                   v.getContext().startActivity(intent);
               }
           }

@@ -531,7 +531,7 @@ public class SpectrogramView extends SurfaceView implements SurfaceHolder.Callba
 	 * HSL color model <br>
 	 * Used to convert color to RGB in 360 degrees <br><br>
 	 * Formula according to: http://en.wikipedia.org/wiki/HSL_and_HSV <br>
-	 * Given an HSL color with hue H ¡Ê [0¡ã, 360¡ã), saturation SHSL ¡Ê [0, 1], and lightness L ¡Ê [0, 1]
+	 * Given an HSL color with hue HËš = [0Ëš, 360Ëš], saturation SHSL% = [0, 1], and lightness L% = [0, 1]
 	 */
 	public void colorHSLSelecter( int degree, double l )
 	{

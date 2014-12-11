@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "edu.ucdenver.aprad"
-        minSdkVersion 13
+        minSdkVersion 15
         targetSdkVersion 16
 
         testApplicationId "edu.ucdenver.aprad"
@@ -15,7 +15,6 @@ android {
 
     buildTypes {
         release {
-            runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }

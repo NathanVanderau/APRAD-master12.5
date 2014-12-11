@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="/Users/imac/Documents/UCDenver/CSCI4800/APRAD-master12.5/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-f27d4e0ad3cddb5af6ca6b5801b990ad621d6884.jar"
-        jar="/Users/imac/Documents/UCDenver/CSCI4800/APRAD-master12.5/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jar="/Users/Nathan/Documents/UCDenver/2014_Fall/CSCI 4738/APRAD-master12.5/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f"/>
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/Users/Nathan/Documents/UCDenver/2014_Fall/CSCI 4738/APRAD-master12.5/app/build/intermediates/pre-dexed/debug/classes-ef17929ee02548cab6382a547233e459d8054e82.jar" />
+    </item>
     <item
-        dex="/Users/imac/Documents/UCDenver/CSCI4800/APRAD-master12.5/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-e965d389783da2df475e2993528f7a5e9b48af52.jar"
-        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jar="/Users/Nathan/Documents/UCDenver/2014_Fall/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6"/>
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="/Users/Nathan/Documents/UCDenver/2014_Fall/CSCI 4738/APRAD-master12.5/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-b4078b8829848fa70752790e37b16f128a36c3c6.jar" />
+    </item>
     <item
-        dex="/Users/imac/Documents/UCDenver/CSCI4800/APRAD-master12.5/app/build/intermediates/pre-dexed/debug/classes-e4bc742894ee22a624990006ee27672863d75805.jar"
-        jar="/Users/imac/Documents/UCDenver/CSCI4800/APRAD-master12.5/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jar="/Users/Nathan/Documents/UCDenver/2014_Fall/CSCI 4738/APRAD-master12.5/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3"/>
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/Users/Nathan/Documents/UCDenver/2014_Fall/CSCI 4738/APRAD-master12.5/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-83497b73adbc69061f5c5ad041c718cd79325387.jar" />
+    </item>
 
-</pre-dex-items>
+</items>
